@@ -9,7 +9,7 @@
   },
   "scripts": {
     "react-dev": "webpack -p --watch",
-    "start": "node server/server.js",
+    "start": "nodemon server/server.js",
     "test": "jest",
     "seed": "node server/server.js",
     "react-test": "jest --verbose"
