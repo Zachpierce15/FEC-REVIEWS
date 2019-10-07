@@ -129,8 +129,8 @@ class App extends React.Component {
           pageNumber: 0,
         });
       })
-      .catch(() => {
-        console.log('THIS IS AN ERROR');
+      .catch((err) => {
+        console.log('THIS IS AN ERROR', err);
       });
   }
   // ------------------------ Search functions ------------------------

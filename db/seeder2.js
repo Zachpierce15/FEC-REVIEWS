@@ -1,6 +1,6 @@
 const faker = require('faker');
 const moment = require('moment');
-const db = require('./db/index.js');
+const db = require('./index.js');
 
 const seedingMyListings = () => {
   for (let i = 1; i <= 100; i += 1) {
