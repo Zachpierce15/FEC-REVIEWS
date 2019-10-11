@@ -48,7 +48,6 @@ class EachReview extends React.Component {
 
   onClickHandle(e) {
     e.preventDefault();
-    console.log('THIS IS CLICKED');
     this.setState({ clickedReadMore: true });
   }
 

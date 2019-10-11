@@ -6,44 +6,6 @@ import stars from './styleSheet.css';
 
 
 // ---------------------- Styling ------------------------------------
-const ReviewsDiv = styled.div`
-  clear: both;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  margin-left: 8px;
-  margin-right: 8px;
-  width: 50%;
-  position: inherit;
-  justify-content: center;
-  display: table;
-  box-sizing: border-box;
-  font-size: 14px;
-`;
-
-const EachSection = styled.div`
-  margin-bottom: 8px
-`;
-
-const SeparateRight = styled.div`
-  padding-right: 16px;
-  float: left;
-`;
-
-const SeparateLeft = styled.div`
-  float: left;
-  padding-left: 5px;
-`;
-
-const StyledSpan = styled.span`
-  padding-right: 8px;
-  padding-left: 8px;
-  font-weight: 400;
-  line-height: 1.375em;
-  color: #484848;
-  font-size: 16px;
-  font-weight: 400;
-`;
-
 const StarSpan = styled.span`
   float: right;
   padding-left: 10px;
@@ -81,7 +43,6 @@ class MainReviewStars extends React.Component {
       + checkIn
       + location
       + value) / (this.props.ratings.length * 6)) * 20;
-    console.log(allReviews);
     return (
       <StarSpan>
         <div className={stars.starRating} title="70%">

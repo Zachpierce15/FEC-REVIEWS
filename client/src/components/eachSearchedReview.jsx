@@ -50,7 +50,6 @@ class EachSearchReview extends React.Component {
 
   onClickHandle(e) {
     e.preventDefault();
-    console.log('THIS IS CLICKED');
     this.setState({ clickedReadMore: true });
   }
 
@@ -58,13 +57,15 @@ class EachSearchReview extends React.Component {
     // ------------------------- Changing things inside of the message ------------------------
 
     const index = this.props.review.firstHalf.indexOf(this.props.query);
+
     const firstPart = (this.props.review.firstHalf.slice(0, index));
-    console.log('this is firstHalf', firstPart);
+
     const rightWord = this.props.review.firstHalf.slice(index, index + this.props.query.length);
+
     const boldRightWord = (<b>{rightWord}</b>);
-    console.log('this is the word', boldRightWord);
+
     const lastPart = this.props.review.firstHalf.slice(index + this.props.query.length);
-    console.log('THIS IS THE LAST HALF', lastPart);
+    
     const wholeNew = (
       <p>
         {firstPart}

@@ -13,7 +13,6 @@ app.use(express.static(path.join(__dirname, '../client/public')));
 
 // routes go here
 app.get('/reviews', (req, res) => {
-  console.log('THIS IS QUERY!!!!!!ß', req.query.randomListing);
   const listing = req.query.randomListing;
   model.getMessages(listing, (err, data) => {
     if (err) {

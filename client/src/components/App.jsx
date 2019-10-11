@@ -121,7 +121,6 @@ class App extends React.Component {
           const myChunk = data.data.slice(i, i + 5);
           groupedData.push(myChunk);
         }
-        console.log(groupedData);
         this.setState({
           reviewsData: data.data,
           pages: groupedData,
@@ -164,7 +163,6 @@ class App extends React.Component {
   onClickHandler(e) {
     e.preventDefault();
     const startingChunks = this.state.startChunks;
-    console.log('Button is working!!!');
     this.setState({
       pages: startingChunks,
       displayedReviews: startingChunks[0],
